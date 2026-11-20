@@ -3,4 +3,5 @@ import { mkdir } from "node:fs/promises";
 
 await mkdir("/output", { recursive: true });
 await copyFile("POST.json", "/output/POST.json");
+console.log('Done');
 console.log("POST.json → /output/POST.json");
